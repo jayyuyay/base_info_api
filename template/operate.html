@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+{% block content %}
+<form role="form" action="/country/op" method="post">
+    <h2>country</h2>
+   <div class="form-group">
+      <label for="code">国家码</label>
+      <input type="text" class="form-control" id="code" name="code"
+         placeholder="请输入国家码">
+   </div>
+   <div class="form-group">
+      <label for="en">对应英文</label>
+      <input type="text" class="form-control" id="en" name="en"
+         placeholder="请输入对应英文">
+   </div>
+    <div class="form-group">
+      <label for="cn">对应中文</label>
+      <input type="text" class="form-control" id="cn" name="cn"
+         placeholder="请输入对应中文">
+   </div>
+
+   <button type="submit" class="btn btn-default">提交</button>
+</form>
+<form role="form" action="/android/op" method="post">
+    <h2>android</h2>
+   <div class="form-group">
+      <label for="api">api</label>
+      <input type="text" class="form-control" id="api" name="api"
+         placeholder="请输入api">
+   </div>
+   <div class="form-group">
+      <label for="version">对应版本</label>
+      <input type="text" class="form-control" id="version" name="version"
+         placeholder="请输入对应版本">
+   </div>
+    <div class="form-group">
+      <label for="name">对应名称</label>
+      <input type="text" class="form-control" id="name" name="name"
+         placeholder="请输入对应名称">
+   </div>
+   <button type="submit" class="btn btn-default">提交</button>
+</form>
+{% end %}

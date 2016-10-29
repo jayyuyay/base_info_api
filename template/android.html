@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+<thead>
+    <tr>
+      <th>API</th>
+      <th>VERSION</th>
+      <th>NAME</th>
+    </tr>
+</thead>
+<tbody>
+    {% for value in values %}
+    <tr>
+        <td>{{value['api']}}</td>
+        <td>{{value['version']}}</td>
+        <td>{{value['name']}}</td>
+    </tr>
+    {% end %}
+</tbody>
+{% end %}
